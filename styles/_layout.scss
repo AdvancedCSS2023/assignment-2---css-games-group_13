@@ -1,0 +1,12 @@
+
+
+.game {
+    display: flex;
+    justify-content: center;
+
+    &__screen {
+        height: $full-height;
+        width: $screen-width;
+        background-color: $primary-color;
+    }
+}

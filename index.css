@@ -1,0 +1,11 @@
+h2:before {
+    content: counter(hits);
+}
+
+input:checked {
+    counter-increment: hits;
+}
+
+body {
+    background-color: bisque;
+}

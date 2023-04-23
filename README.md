@@ -1,2 +1,18 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/LlYauwvp)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10936558&assignment_repo_type=AssignmentRepo)
+What the project does:
+This project makes it so that you can have a blast by whacking some moles. For me it is to practice my css abilities.
+
+
+Why the project is useful:
+It is simply a fun and creative excercise to learn from. For the user of the page, they can have some fun.
+
+How users can get started with the project:
+To get started you can go to the page where the game is hosted and start whacking the moles. The user can also download the game and host it localy.
+
+Where users can get help with your project:
+Users can clone the repository to their computer and and tweak the code, if they want to. But they need to make a request that need to get allowed by a admin to push new content.
+
+Which technology is used:
+Html and scss
+
+Who maintains and contributes to the project:
+Vegard

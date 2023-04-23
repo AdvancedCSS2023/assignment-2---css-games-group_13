@@ -9,7 +9,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: url(/img/dirt-background.jpg);
+        background: url(../img/dirt-background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -58,7 +58,7 @@ body {
             &__victory {
                 height: $full-height;
                 width: $screen-width;
-                background-image: url('/img/gif-mole.gif');
+                background-image: url('../img/gif-mole.gif');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;

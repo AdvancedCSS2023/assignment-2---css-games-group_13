@@ -30,7 +30,7 @@ h4 {
   0% {
     transform: translateY(10%);
   }
-  35% {
+  25% {
     transform: translateY(100%);
   }
   100% {
@@ -69,12 +69,12 @@ label:before {
   display: inline-block;
   height: 175px;
   width: 120px;
-  background-image: url(/img/mole.svg);
+  background-image: url(../img/mole.svg);
   background-size: cover;
 }
 
 input:checked + label:before {
-  background-image: url(/img/dead-mole.svg);
+  background-image: url(../img/dead-mole.svg);
 }
 
 input:checked + label {
@@ -148,7 +148,7 @@ body .game {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(/img/dirt-background.jpg);
+  background: url(../img/dirt-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -190,7 +190,7 @@ body .game__screen--ground3 {
 body .game__screen__victory {
   height: 100vh;
   width: 500px;
-  background-image: url("/img/gif-mole.gif");
+  background-image: url("../img/gif-mole.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

@@ -3,7 +3,7 @@ This project makes it so that you can have a blast by whacking some moles. For m
 
 
 Why the project is useful:
-It is simply a fun and creative excercise to learn from. For the user of the page, they can have some fun.
+It is simply a fun and creative excercise to learn from. For the user it is just some fun.
 
 How users can get started with the project:
 https://advancedcss2023.github.io/assignment-2---css-games-group_13/

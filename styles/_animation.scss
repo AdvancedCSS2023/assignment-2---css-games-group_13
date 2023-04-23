@@ -1,11 +1,11 @@
 @keyframes moveDown {
-    0% {
-      transform: translateY(0);
-    }
-    30% {
-        transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
+  0% {
+    transform: translateY(10%);
   }
+  35% {
+      transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

@@ -6,6 +6,7 @@ Why the project is useful:
 It is simply a fun and creative excercise to learn from. For the user of the page, they can have some fun.
 
 How users can get started with the project:
+https://advancedcss2023.github.io/assignment-2---css-games-group_13/
 To get started you can go to the page where the game is hosted and start whacking the moles. The user can also download the game and host it localy.
 
 Where users can get help with your project:

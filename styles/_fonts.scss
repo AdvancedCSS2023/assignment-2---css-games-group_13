@@ -1,0 +1,29 @@
+// Import the DynaPuff font
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap');
+
+// Set the font family for your headings
+h1, h2, h4 {
+  font-family: 'DynaPuff', cursive;
+}
+
+// Additional styling for your headings
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
+
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+}

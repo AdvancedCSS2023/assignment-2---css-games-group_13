@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+
+
+
+
+    .game {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/dirt-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+
+
+        &__screen {
+            height: $full-height;
+            width: $screen-width;
+            background-color: $primary-color;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+
+            &--ground1 {
+                height: 330px;
+                width: 500px;
+                background: linear-gradient($dirt-color1, $dirt-color3);
+                position: absolute;
+                bottom: 400px;
+                z-index: 50;
+
+            }
+            &--ground2 {
+                height: 330px;
+                width: 500px;
+                background: linear-gradient($dirt-color1, $dirt-color2);
+                position: absolute;
+                bottom: 200px;
+                z-index: 70;
+
+            }
+            &--ground3 {
+                height: 300px;
+                width: 500px;
+                background: linear-gradient($dirt-color2, $dirt-color3);
+                position: absolute;
+                bottom: 0;
+                z-index: 100;
+
+            }
+
+            &__victory {
+                height: $full-height;
+                width: $screen-width;
+                background-image: url('../img/gif-mole.gif');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                position: absolute;
+                top: 100vh;
+                z-index: 999;
+                transition-property: top;
+                transition-timing-function: ease-in-out;
+                display: grid;
+
+                h1 {
+                    justify-self: center;
+                    margin-top: 20%; 
+                }
+            }
+
+
+        }
+
+        
+    }
+
+}
+
+input:checked ~
+input:checked ~
+input:checked ~
+input:checked ~
+input:checked ~
+input:checked ~
+input:checked ~ .game__screen__victory {
+    top: 0;
+}
+

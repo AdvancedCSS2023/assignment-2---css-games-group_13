@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500&display=swap");
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h4 {
+  font-family: "DynaPuff", cursive;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(10%);
+  }
+  25% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+* {
+  cursor: url("../img/hammer.png") 0 5, auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+h2:before {
+  content: counter(hits) "/7";
+}
+
+input {
+  height: 0;
+  width: 0;
+}
+
+input:checked {
+  counter-increment: hits;
+}
+
+label {
+  display: inline-block;
+  height: 175px;
+  width: 100px;
+  background-size: cover;
+}
+
+label:before {
+  content: "";
+  display: inline-block;
+  height: 175px;
+  width: 120px;
+  background-image: url(../img/mole.svg);
+  background-size: cover;
+}
+
+input:checked + label:before {
+  background-image: url(../img/dead-mole.svg);
+}
+
+input:checked + label {
+  pointer-events: none;
+  animation-play-state: paused !important;
+}
+
+#mole1 {
+  top: 60px;
+  left: 60px;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 5.7s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole2 {
+  top: 60px;
+  left: 250px;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 5s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole3 {
+  top: 260px;
+  left: 30px;
+  z-index: 60;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 4.7s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole4 {
+  top: 260px;
+  left: 160px;
+  z-index: 60;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 6s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole5 {
+  top: 260px;
+  left: 340px;
+  z-index: 60;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 4.3s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole6 {
+  top: 490px;
+  left: 140px;
+  z-index: 90;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 5.2s alternate;
+  animation-iteration-count: infinite;
+}
+
+#mole7 {
+  top: 490px;
+  left: 380px;
+  z-index: 90;
+  animation: moveDown cubic-bezier(0.25, 0.1, 0.25, 1) 4s alternate;
+  animation-iteration-count: infinite;
+}
+
+.mole {
+  position: absolute;
+}
+
+body {
+  height: 100vh;
+}
+body .game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/dirt-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body .game__screen {
+  height: 100vh;
+  width: 500px;
+  background-color: #007bff;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body .game__screen--ground1 {
+  height: 330px;
+  width: 500px;
+  background: linear-gradient(#95604d, #6c3e2d);
+  position: absolute;
+  bottom: 400px;
+  z-index: 50;
+}
+body .game__screen--ground2 {
+  height: 330px;
+  width: 500px;
+  background: linear-gradient(#95604d, #814734);
+  position: absolute;
+  bottom: 200px;
+  z-index: 70;
+}
+body .game__screen--ground3 {
+  height: 300px;
+  width: 500px;
+  background: linear-gradient(#814734, #6c3e2d);
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+body .game__screen__victory {
+  height: 100vh;
+  width: 500px;
+  background-image: url("../img/gif-mole.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 100vh;
+  z-index: 999;
+  transition-property: top;
+  transition-timing-function: ease-in-out;
+  display: grid;
+}
+body .game__screen__victory h1 {
+  justify-self: center;
+  margin-top: 20%;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ .game__screen__victory {
+  top: 0;
+}/*# sourceMappingURL=index.css.map */

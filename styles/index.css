@@ -38,7 +38,7 @@ h4 {
   }
 }
 * {
-  cursor: url("/img/hammer.png") 0 5, auto;
+  cursor: url("../img/hammer.png") 0 5, auto;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
